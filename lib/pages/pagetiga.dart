@@ -15,17 +15,19 @@ class PageTiga extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                navigator!.pop();
+                // navigator!.pop();
+                Get.back();
               },
               child: Text("<< Back Page"),
             ),
             ElevatedButton(
               onPressed: () {
-                navigator!.push(
-                  MaterialPageRoute(
-                    builder: (context) => PageEmpat(),
-                  ),
-                );
+                // navigator!.push(
+                //   MaterialPageRoute(
+                //     builder: (context) => PageEmpat(),
+                //   ),
+                // );
+                Get.to(PageEmpat());
               },
               child: Text("Next Page >>"),
             ),

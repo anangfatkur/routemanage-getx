@@ -14,13 +14,15 @@ class PageSatu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {
-                navigator!.push(
-                  MaterialPageRoute(
-                    builder: (_) => PageDua(),
-                  ),  
-                );
-              },
+              onPressed: () => Get.off(PageDua(), arguments: "Dari Page 1"),
+
+              // {
+              // navigator!.push(
+              //   MaterialPageRoute(
+              //     builder: (_) => PageDua(),
+              //   ),
+              // );
+
               child: Text("Next Page >>"),
             ),
           ],

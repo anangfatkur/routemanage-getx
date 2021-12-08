@@ -14,7 +14,8 @@ class PageLima extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                navigator!.pop();
+                // navigator!.pop();
+                Get.back();
               },
               child: Text("<< Back Page"),
             ),

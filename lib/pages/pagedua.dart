@@ -15,20 +15,23 @@ class PageDua extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                navigator!.pop();
+                // navigator!.pop();
+                Get.back();
               },
               child: Text("<< Back Page"),
             ),
             ElevatedButton(
               onPressed: () {
-                navigator!.push(
-                  MaterialPageRoute(
-                    builder: (context) => PageTiga(),
-                  ),
-                );
+                // navigator!.push(
+                //   MaterialPageRoute(
+                //     builder: (context) => PageTiga(),
+                //   ),
+                // );
+                Get.to(PageTiga());
               },
               child: Text("Next Page >>"),
             ),
+            Text(Get.arguments.toString()),
           ],
         ),
       ),

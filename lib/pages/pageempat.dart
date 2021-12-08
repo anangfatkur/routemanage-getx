@@ -15,17 +15,19 @@ class PageEmpat extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                navigator!.pop();
+                // Navigator.pop(context);
+                Get.back();
               },
               child: Text("<< Back Page"),
             ),
             ElevatedButton(
               onPressed: () {
-                navigator!.push(
-                  MaterialPageRoute(
-                    builder: (context) => PageLima(),
-                  ),
-                );
+                // navigator!.push(
+                //   MaterialPageRoute(
+                //     builder: (context) => PageLima(),
+                //   ),
+                // );
+                Get.offAll(PageLima());
               },
               child: Text("Next Page >>"),
             ),
