@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '../pages/pagedua.dart';
 
 class PageSatu extends StatelessWidget {
   @override
@@ -12,7 +14,13 @@ class PageSatu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                navigator!.push(
+                  MaterialPageRoute(
+                    builder: (context) => PageDua(),
+                  ),  
+                );
+              },
               child: Text("Next Page >>"),
             ),
           ],

@@ -15,10 +15,6 @@ class PageLima extends StatelessWidget {
               onPressed: () {},
               child: Text("<< Back Page"),
             ),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("Next Page >>"),
-            ),
           ],
         ),
       ),

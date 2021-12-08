@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../pages/pageempat.dart';
 
 class PageTiga extends StatelessWidget {
   @override
@@ -12,14 +13,21 @@ class PageTiga extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               child: Text("<< Back Page"),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => PageEmpat(),
+                  ),
+                );
+              },
               child: Text("Next Page >>"),
-            ),
-          ],
+            ),          ],
         ),
       ),
     );
