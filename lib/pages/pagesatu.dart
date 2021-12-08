@@ -17,7 +17,7 @@ class PageSatu extends StatelessWidget {
               onPressed: () {
                 navigator!.push(
                   MaterialPageRoute(
-                    builder: (context) => PageDua(),
+                    builder: (_) => PageDua(),
                   ),  
                 );
               },

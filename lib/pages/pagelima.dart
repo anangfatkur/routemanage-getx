@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PageLima extends StatelessWidget {
   @override
@@ -12,7 +13,9 @@ class PageLima extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                navigator!.pop();
+              },
               child: Text("<< Back Page"),
             ),
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../pages/pagelima.dart';
 
 class PageEmpat extends StatelessWidget {
@@ -14,13 +15,13 @@ class PageEmpat extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.pop(context);
+                navigator!.pop();
               },
               child: Text("<< Back Page"),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).push(
+                navigator!.push(
                   MaterialPageRoute(
                     builder: (context) => PageLima(),
                   ),
