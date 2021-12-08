@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../pages/pagelima.dart';
 
 class PageEmpat extends StatelessWidget {
   @override
@@ -27,7 +26,8 @@ class PageEmpat extends StatelessWidget {
                 //     builder: (context) => PageLima(),
                 //   ),
                 // );
-                Get.offAll(PageLima());
+                // Get.offAll(PageLima());
+                Get.offAllNamed('/page-5');
               },
               child: Text("Next Page >>"),
             ),
