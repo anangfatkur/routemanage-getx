@@ -1,4 +1,7 @@
 import 'package:get/get.dart';
+import 'package:routemanage_getx/pages/detail_product.dart';
+import 'package:routemanage_getx/pages/home_page.dart';
+import 'package:routemanage_getx/pages/product_page.dart';
 import 'package:routemanage_getx/routes/name_routes.dart';
 import '../pages/pagesatu.dart';
 import '../pages/pagedua.dart';
@@ -27,6 +30,18 @@ class AppPage {
     GetPage(
       name: RouteName.page_5,
       page: () => PageLima(),
+    ),
+    GetPage(
+      name: RouteName.homepage,
+      page: () => HomePage(),
+    ),
+    GetPage(
+      name: RouteName.productpage,
+      page: () => ProductPage(),
+    ),
+    GetPage(
+      name: RouteName.detailproduct,
+      page: () => DetailProduct(),
     ),
   ];
 }
