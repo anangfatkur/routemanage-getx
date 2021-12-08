@@ -16,20 +16,20 @@ class ProductPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () =>
-                  Get.toNamed(RouteName.detailproduct, arguments: 1),
+              onPressed: () => Get.toNamed(
+                  RouteName.detailproduct + '/1?name=Jaket&ukuran=XL'),
               child: Text("Product 1"),
             ),
             SizedBox(height: 10),
             ElevatedButton(
-              onPressed: () =>
-                  Get.toNamed(RouteName.detailproduct, arguments: 2),
+              onPressed: () => Get.toNamed(RouteName.detailproduct +
+                  '/2?name=Kaos Kaki Saya Baru&ukuran=JUMBO'),
               child: Text("Product 2"),
             ),
             SizedBox(height: 10),
             ElevatedButton(
-              onPressed: () =>
-                  Get.toNamed(RouteName.detailproduct, arguments: 3),
+              onPressed: () => Get.toNamed(
+                  RouteName.detailproduct + '/2?name=Sendal Baru&ukuran=42'),
               child: Text("Product 3"),
             ),
           ],

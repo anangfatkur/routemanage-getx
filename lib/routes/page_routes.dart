@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:routemanage_getx/pages/detail_product.dart';
-import 'package:routemanage_getx/pages/home_page.dart';
-import 'package:routemanage_getx/pages/product_page.dart';
-import 'package:routemanage_getx/routes/name_routes.dart';
+import '../pages/detail_product.dart';
+import '../pages/home_page.dart';
+import '../pages/product_page.dart';
+import '../routes/name_routes.dart';
 import '../pages/pagesatu.dart';
 import '../pages/pagedua.dart';
 import '../pages/pagetiga.dart';
@@ -40,7 +40,7 @@ class AppPage {
       page: () => ProductPage(),
     ),
     GetPage(
-      name: RouteName.detailproduct,
+      name: RouteName.detailproduct + '/:id?',
       page: () => DetailProduct(),
     ),
   ];

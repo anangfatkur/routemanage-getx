@@ -9,13 +9,14 @@ class DetailProduct extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Product ID ${Get.arguments}"),
+        title: Text("Product ID ${Get.parameters['id']}"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Product id ${Get.arguments}"),
+            Text("Product Name ${Get.parameters['name']}"),
+            Text("Product Ukuran ${Get.parameters['ukuran']}"),
           ],
         ),
       ),
