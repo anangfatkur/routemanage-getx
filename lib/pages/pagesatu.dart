@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../routes/name_routes.dart';
 
 class PageSatu extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class PageSatu extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Get.toNamed('/page-2');
+                Get.toNamed(RouteName.page_2);
               },
 
               // onPressed: () async {

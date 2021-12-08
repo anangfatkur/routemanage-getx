@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../routes/name_routes.dart';
 
 class PageDua extends StatelessWidget {
   @override
@@ -27,7 +28,7 @@ class PageDua extends StatelessWidget {
                 //   ),
                 // );
                 // Get.to(PageTiga());
-                Get.toNamed('/page-3');
+                Get.toNamed(RouteName.page_3);
               },
               child: Text("Next Page >>"),
             ),

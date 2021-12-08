@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../routes/name_routes.dart';
 
 class PageEmpat extends StatelessWidget {
   @override
@@ -27,7 +28,8 @@ class PageEmpat extends StatelessWidget {
                 //   ),
                 // );
                 // Get.offAll(PageLima());
-                Get.offAllNamed('/page-5');
+                // Get.offAllNamed('/page-5');
+                Get.offAllNamed(RouteName.page_5);
               },
               child: Text("Next Page >>"),
             ),
