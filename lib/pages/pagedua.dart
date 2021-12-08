@@ -16,7 +16,7 @@ class PageDua extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // navigator!.pop();
-                Get.back();
+                Get.back(result: "INI DARI PAGE 2");
               },
               child: Text("<< Back Page"),
             ),
@@ -31,7 +31,7 @@ class PageDua extends StatelessWidget {
               },
               child: Text("Next Page >>"),
             ),
-            Text(Get.arguments.toString()),
+            // Text(Get.arguments.toString()),
           ],
         ),
       ),
