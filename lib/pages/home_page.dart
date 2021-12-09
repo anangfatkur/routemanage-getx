@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
             "hallo ini judul",
             "hallo ini pesan",
             animationDuration: Duration(milliseconds: 200),
-            duration: Duration(seconds: 2),
+            duration: Duration(seconds: 7),
             backgroundColor: Colors.green,
             backgroundGradient: LinearGradient(
               colors: [
@@ -32,6 +32,11 @@ class HomePage extends StatelessWidget {
             ),
             borderColor: Colors.blue,
             borderWidth: 4,
+            icon: Icon(
+              Icons.add_alarm,
+              color: Colors.white,
+            ),
+            shouldIconPulse: false,
           );
         },
         child: Icon(Icons.add),
